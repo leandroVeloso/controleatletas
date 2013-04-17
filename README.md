@@ -3,6 +3,7 @@ Controle de Atetlas
 
 Sistema de cadastro de atletas (para práticas de conceitos de orientação a
 objetos e técnicas de programação).
+Esporte - Esgrima.
 
 
 Desenvolvimento
@@ -16,6 +17,7 @@ Autores
 
 Paulo Meirelles
 
+Leandro Veloso
 
 Licença
 -------
