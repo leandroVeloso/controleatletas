@@ -12,24 +12,6 @@ import javax.swing.table.DefaultTableModel;
 
 public class CadastroEsgrimista extends javax.swing.JFrame {
 
-    private final byte SEXO_MASCULINO_INDICE = 0;
-    private final byte SEXO_FEMININO_INDICE = 1;
-    private final char SEXO_MASCULINO_VALOR = 'M';
-    private final char SEXO_FEMININO_VALOR = 'F';
-    private final byte ARMA_FLORETE_INDICE = 0;
-    private final byte ARMA_ESPADA_INDICE = 1;
-    private final byte ARMA_SABRE_INDICE = 2;
-    private final char ARMA_FLORETE_VALOR = 'F';
-    private final char ARMA_ESPADA_VALOR = 'E';
-    private final char ARMA_SABRE_VALOR = 'S';
-    private final byte CATEGORIA_ELETRICA_INDICE = 0;
-    private final byte CATEGORIA_MUDO_INDICE = 1;
-    private final char CATEGORIA_ELETRICA_VALOR = 'E';
-    private final char CATEGORIA_MUDO_VALOR = 'M';
-    private final byte ESTILO_DESTRO_INDICE = 0;
-    private final byte ESTILO_CANHOTO_INDICE = 1;
-    private final char ESTILO_DESTRO_VALOR = 'D';
-    private final char ESTILO_CANHOTO_VALOR = 'C';
     private DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
     private ControleEsgrimista controleEsgrimista;
     private Esgrimista umEsgrimista;
@@ -126,41 +108,41 @@ public class CadastroEsgrimista extends javax.swing.JFrame {
         }
 
         switch (umEsgrimista.getSexo()) {
-            case SEXO_MASCULINO_VALOR:
-                jComboBoxSexo.setSelectedIndex(SEXO_MASCULINO_INDICE);
+            case ConstantesEsgrimista.SEXO_MASCULINO_VALOR:
+                jComboBoxSexo.setSelectedIndex(ConstantesEsgrimista.SEXO_MASCULINO_INDICE);
                 break;
-            case SEXO_FEMININO_VALOR:
-                jComboBoxSexo.setSelectedIndex(SEXO_FEMININO_INDICE);
+            case ConstantesEsgrimista.SEXO_FEMININO_VALOR:
+                jComboBoxSexo.setSelectedIndex(ConstantesEsgrimista.SEXO_FEMININO_INDICE);
                 break;
         }
 
         switch (umEsgrimista.getCategoria()) {
-            case CATEGORIA_ELETRICA_VALOR:
-                jComboBoxCategoria.setSelectedIndex(CATEGORIA_ELETRICA_INDICE);
+            case ConstantesEsgrimista.CATEGORIA_ELETRICA_VALOR:
+                jComboBoxCategoria.setSelectedIndex(ConstantesEsgrimista.CATEGORIA_ELETRICA_INDICE);
                 break;
-            case CATEGORIA_MUDO_VALOR:
-                jComboBoxCategoria.setSelectedIndex(CATEGORIA_MUDO_INDICE);
+            case ConstantesEsgrimista.CATEGORIA_MUDO_VALOR:
+                jComboBoxCategoria.setSelectedIndex(ConstantesEsgrimista.CATEGORIA_MUDO_INDICE);
                 break;
         }
         
         switch (umEsgrimista.getCategoria()) {
-            case CATEGORIA_ELETRICA_VALOR:
-                jComboBoxCategoria.setSelectedIndex(CATEGORIA_ELETRICA_INDICE);
+            case ConstantesEsgrimista.CATEGORIA_ELETRICA_VALOR:
+                jComboBoxCategoria.setSelectedIndex(ConstantesEsgrimista.CATEGORIA_ELETRICA_INDICE);
                 break;
-            case CATEGORIA_MUDO_VALOR:
-                jComboBoxCategoria.setSelectedIndex(CATEGORIA_MUDO_INDICE);
+            case ConstantesEsgrimista.CATEGORIA_MUDO_VALOR:
+                jComboBoxCategoria.setSelectedIndex(ConstantesEsgrimista.CATEGORIA_MUDO_INDICE);
                 break;
         }
 
         switch (umEsgrimista.getArma()) {
-            case ARMA_FLORETE_VALOR:
-                jComboBoxArma.setSelectedIndex(ARMA_FLORETE_INDICE);
+            case ConstantesEsgrimista.ARMA_FLORETE_VALOR:
+                jComboBoxArma.setSelectedIndex(ConstantesEsgrimista.ARMA_FLORETE_INDICE);
                 break;
-            case ARMA_SABRE_VALOR:
-                jComboBoxArma.setSelectedIndex(ARMA_SABRE_INDICE);
+            case ConstantesEsgrimista.ARMA_SABRE_VALOR:
+                jComboBoxArma.setSelectedIndex(ConstantesEsgrimista.ARMA_SABRE_INDICE);
                 break;
-            case ARMA_ESPADA_VALOR:
-                jComboBoxArma.setSelectedIndex(ARMA_ESPADA_INDICE);
+            case ConstantesEsgrimista.ARMA_ESPADA_VALOR:
+                jComboBoxArma.setSelectedIndex(ConstantesEsgrimista.ARMA_ESPADA_INDICE);
                 break;
         }
 
@@ -367,41 +349,41 @@ public class CadastroEsgrimista extends javax.swing.JFrame {
         umEsgrimista.setTotalVitorias(Integer.parseInt(jTextFieldTotalVitorias.getText()));
 
         switch (jComboBoxSexo.getSelectedIndex()) {
-            case SEXO_MASCULINO_INDICE:
-                umEsgrimista.setSexo(SEXO_MASCULINO_VALOR);
+            case ConstantesEsgrimista.SEXO_MASCULINO_INDICE:
+                umEsgrimista.setSexo(ConstantesEsgrimista.SEXO_MASCULINO_VALOR);
                 break;
-            case SEXO_FEMININO_INDICE:
-                umEsgrimista.setSexo(SEXO_FEMININO_VALOR);
+            case ConstantesEsgrimista.SEXO_FEMININO_INDICE:
+                umEsgrimista.setSexo(ConstantesEsgrimista.SEXO_FEMININO_VALOR);
                 break;
         }
 
         switch (jComboBoxCategoria.getSelectedIndex()) {
-            case CATEGORIA_ELETRICA_INDICE:
-                umEsgrimista.setCategoria(CATEGORIA_ELETRICA_VALOR);
+            case ConstantesEsgrimista.CATEGORIA_ELETRICA_INDICE:
+                umEsgrimista.setCategoria(ConstantesEsgrimista.CATEGORIA_ELETRICA_VALOR);
                 break;
-            case CATEGORIA_MUDO_INDICE:
-                umEsgrimista.setCategoria(CATEGORIA_MUDO_VALOR);
+            case ConstantesEsgrimista.CATEGORIA_MUDO_INDICE:
+                umEsgrimista.setCategoria(ConstantesEsgrimista.CATEGORIA_MUDO_VALOR);
                 break;
         }
         
         switch (jComboBoxArma.getSelectedIndex()) {
-            case ARMA_FLORETE_INDICE:
-                umEsgrimista.setArma(ARMA_FLORETE_VALOR);
+            case ConstantesEsgrimista.ARMA_FLORETE_INDICE:
+                umEsgrimista.setArma(ConstantesEsgrimista.ARMA_FLORETE_VALOR);
                 break;
-            case ARMA_SABRE_INDICE:
-                umEsgrimista.setArma(ARMA_SABRE_VALOR);
+            case ConstantesEsgrimista.ARMA_SABRE_INDICE:
+                umEsgrimista.setArma(ConstantesEsgrimista.ARMA_SABRE_VALOR);
                 break;
-            case ARMA_ESPADA_INDICE:
-                umEsgrimista.setArma(ARMA_ESPADA_VALOR);
+            case ConstantesEsgrimista.ARMA_ESPADA_INDICE:
+                umEsgrimista.setArma(ConstantesEsgrimista.ARMA_ESPADA_VALOR);
                 break;
         }
 
         switch (jComboBoxEstilo.getSelectedIndex()) {
-            case ESTILO_DESTRO_INDICE:
-                umEsgrimista.setEstilo(ESTILO_DESTRO_VALOR);
+            case ConstantesEsgrimista.ESTILO_DESTRO_INDICE:
+                umEsgrimista.setEstilo(ConstantesEsgrimista.ESTILO_DESTRO_VALOR);
                 break;
-            case ESTILO_CANHOTO_INDICE:
-                umEsgrimista.setEstilo(ESTILO_CANHOTO_VALOR);
+            case ConstantesEsgrimista.ESTILO_CANHOTO_INDICE:
+                umEsgrimista.setEstilo(ConstantesEsgrimista.ESTILO_CANHOTO_VALOR);
                 break;
         }
 
