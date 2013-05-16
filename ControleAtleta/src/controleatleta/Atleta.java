@@ -16,6 +16,13 @@ public class Atleta {
     private char sexo;
     private String rg;
     private String cpf;
+    private ArrayList<Premiacao> premiacoes;
+    private int totalCompeticoes;
+    private int totalVitorias;    
+    private int totalEmpates; //Empates
+    private int totalDerrotas; 
+    private char categoria; // E = Elétrica M = Muda
+    private int equipe; // 1 = Individual 3 = 3 participantes 4 = 4 participantes
     
     public Atleta(String nome) {
         this.nome = nome;
@@ -108,6 +115,54 @@ public class Atleta {
 
     public void setTelefones(ArrayList<String> telefones) {
         this.telefones = telefones;
+    }
+    
+     public ArrayList<Premiacao> getPremiacoes() {
+        return premiacoes;
+    }
+
+    public void setPremiacoes(ArrayList<Premiacao> premiacoes) {
+        this.premiacoes = premiacoes;
+    }
+    
+    public int getTotalEmpates() {
+        return totalEmpates;
+    }
+
+    public void setTotalEmpates(int totalEmpates) {
+        this.totalEmpates = totalEmpates;
+    }
+    
+     public int getEquipe() {
+        return equipe;
+    }
+
+    public void setEquipe(int equipe) {
+        this.equipe = equipe;
+    }
+
+    public int getTotalDerrotas() {
+        return totalDerrotas;
+    }
+
+    public void setTotalDerrotas(int derrotas) {
+        this.totalDerrotas = derrotas;
+    }
+
+    public int getTotalCompeticoes() {
+        return totalCompeticoes;
+    }
+
+    public void setTotalCompeticoes(int totalCompeticoes) {
+        this.totalCompeticoes = totalCompeticoes;
+    }
+
+    public int getTotalVitorias() {
+        return totalVitorias;
+    }
+
+    public void setTotalVitorias(int vitorias) {
+        this.totalVitorias = vitorias;
     }
     
 }
