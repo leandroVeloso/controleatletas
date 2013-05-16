@@ -1,4 +1,6 @@
-package controleatleta;
+package controller;
+
+import view.CadastroEsgrimista;
 
 public class ControleAtleta {
 

@@ -1,5 +1,6 @@
-package controleatleta;
+package controller;
 
+import model.Esgrimista;
 import java.util.ArrayList;
 
 public class ControleEsgrimista {

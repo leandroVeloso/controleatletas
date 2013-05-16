@@ -1,5 +1,5 @@
 
-package controleatleta;
+package model;
 
 public class ConstantesEsgrimista {
     
