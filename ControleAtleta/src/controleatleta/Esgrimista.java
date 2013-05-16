@@ -1,7 +1,5 @@
 package controleatleta;
 
-import java.util.ArrayList;
-
 public class Esgrimista extends Atleta {
 
     private char categoria; // E = Elétrica M = Muda
