@@ -91,7 +91,7 @@ public class CadastroEsgrimista extends javax.swing.JFrame {
         jTextFieldTotalDerrotas.setText(Integer.toString(umEsgrimista.getTotalDerrotas()));
         jTextFieldTotalDesistencias.setText(Integer.toString(umEsgrimista.getTotalDesistencias()));
         jTextFieldBarrages.setText(Integer.toString(umEsgrimista.getTotalEmpates()));
-        jTextFieldTotalLutas.setText(Integer.toString(umEsgrimista.getTotalLutas()));
+        jTextFieldTotalLutas.setText(Integer.toString(umEsgrimista.getTotalCompeticoes()));
         jTextFieldToquesNaoValidos.setText(Integer.toString(umEsgrimista.getTotalToquesNaoValidos()));
         jTextFieldTotalVitorias.setText(Integer.toString(umEsgrimista.getTotalVitorias()));
 
@@ -344,7 +344,7 @@ public class CadastroEsgrimista extends javax.swing.JFrame {
         umEsgrimista.setTotalDerrotas(Integer.parseInt(jTextFieldTotalDerrotas.getText()));
         umEsgrimista.setTotalDesistencias(Integer.parseInt(jTextFieldTotalDesistencias.getText()));
         umEsgrimista.setTotalEmpates(Integer.parseInt(jTextFieldBarrages.getText()));
-        umEsgrimista.setTotalLutas(Integer.parseInt(jTextFieldTotalLutas.getText()));
+        umEsgrimista.setTotalCompeticoes(Integer.parseInt(jTextFieldTotalLutas.getText()));
         umEsgrimista.setTotalToquesNaoValidos(Integer.parseInt(jTextFieldToquesNaoValidos.getText()));
         umEsgrimista.setTotalVitorias(Integer.parseInt(jTextFieldTotalVitorias.getText()));
 
